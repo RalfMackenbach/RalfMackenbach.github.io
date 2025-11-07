@@ -10,26 +10,22 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.6;
     color: #2c3e50;
-    background: linear-gradient(to bottom, #f8f9fa 0%, #e8f4f8 100%);
+    background-color: #ffffff;
     min-height: 100vh;
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #a8d8ea 0%, #d4e9f7 100%);
+    background-color: #b8d8ea;
     color: #2c3e50;
     text-align: center;
     padding: 3.5rem 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border-bottom: 3px solid #87ceeb;
 }
 
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
-    letter-spacing: 0.5px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 header .sponsor {
@@ -48,20 +44,11 @@ main {
 
 /* Main Text Section */
 .main-text {
-    background: white;
+    background-color: #ffffff;
     padding: 2.5rem;
     margin-bottom: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     text-align: center;
     font-size: 1.1rem;
-    border-left: 4px solid #a8d8ea;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.main-text:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 /* Photos Section */
@@ -80,16 +67,7 @@ main {
     flex: 1;
     min-width: 300px;
     max-width: 500px;
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.photo-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
 }
 
 .photo-item img {
@@ -105,7 +83,7 @@ main {
     font-size: 0.9rem;
     color: #5a6c7d;
     font-style: italic;
-    background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+    background-color: #f8f9fa;
 }
 
 /* Information Section */
@@ -117,17 +95,8 @@ main {
 }
 
 .info-column {
-    background: white;
+    background-color: #f8f9fa;
     padding: 2.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    border-top: 3px solid #a8d8ea;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.info-column:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 .info-column h2 {
@@ -144,12 +113,11 @@ main {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #a8d8ea 0%, #b8e0f0 100%);
+    background-color: #b8d8ea;
     color: #2c3e50;
     text-align: center;
     padding: 2.5rem 2rem;
     margin-top: 4rem;
-    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .footer-logos {
@@ -158,9 +126,6 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 1.5rem;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 8px;
 }
 
 /* small logo size - tweak as necessary */
