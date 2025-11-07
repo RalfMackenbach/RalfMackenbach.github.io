@@ -9,29 +9,34 @@ body {
     /* changed to a serif font as requested */
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #2c3e50;
+    background: linear-gradient(to bottom, #f8f9fa 0%, #e8f4f8 100%);
+    min-height: 100vh;
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
-    color: white;
+    background: linear-gradient(135deg, #a8d8ea 0%, #d4e9f7 100%);
+    color: #2c3e50;
     text-align: center;
-    padding: 3rem 2rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 3.5rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-bottom: 3px solid #87ceeb;
 }
 
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 header .sponsor {
     font-size: 1.1rem;
     font-style: italic;
-    opacity: 0.95;
+    opacity: 0.85;
+    color: #34495e;
 }
 
 /* Main Content */
@@ -44,12 +49,19 @@ main {
 /* Main Text Section */
 .main-text {
     background: white;
-    padding: 2rem;
+    padding: 2.5rem;
     margin-bottom: 3rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     text-align: center;
     font-size: 1.1rem;
+    border-left: 4px solid #a8d8ea;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-text:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 /* Photos Section */
@@ -69,9 +81,15 @@ main {
     min-width: 300px;
     max-width: 500px;
     background: white;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .photo-item img {
@@ -82,11 +100,12 @@ main {
 }
 
 .photo-item .caption {
-    padding: 1rem;
+    padding: 1.25rem;
     text-align: center;
     font-size: 0.9rem;
-    color: #666;
+    color: #5a6c7d;
     font-style: italic;
+    background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
 }
 
 /* Information Section */
@@ -99,37 +118,50 @@ main {
 
 .info-column {
     background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border-top: 3px solid #a8d8ea;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-column:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 .info-column h2 {
-    color: #1a237e;
+    color: #4a90a4;
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .info-column p {
     line-height: 1.8;
-    color: #555;
+    color: #5a6c7d;
 }
 
 /* Footer */
 footer {
-    background-color: #263238;
-    color: white;
+    background: linear-gradient(135deg, #a8d8ea 0%, #b8e0f0 100%);
+    color: #2c3e50;
     text-align: center;
-    padding: 2rem;
-    margin-top: 3rem;
+    padding: 2.5rem 2rem;
+    margin-top: 4rem;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .footer-logos {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    display: inline-flex;
 }
 
 /* small logo size - tweak as necessary */
@@ -143,7 +175,8 @@ footer {
 /* ensure text spacing remains neat */
 footer p {
     margin: 0.5rem 0;
-    color: #fff;
+    color: #34495e;
+    font-weight: 500;
 }
 
 footer p:first-child {
