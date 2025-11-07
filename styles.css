@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* changed to a serif font as requested */
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
@@ -123,12 +124,31 @@ footer {
     margin-top: 3rem;
 }
 
+.footer-logos {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+/* small logo size - tweak as necessary */
+.footer-logo {
+    max-height: 48px;
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+
+/* ensure text spacing remains neat */
 footer p {
     margin: 0.5rem 0;
+    color: #fff;
 }
 
 footer p:first-child {
-    font-style: italic;
+    /* previously styled the sponsor line; now it will apply to the first remaining paragraph (contact) */
+    font-style: normal;
     margin-bottom: 0.5rem;
 }
 
@@ -156,5 +176,9 @@ footer p:first-child {
 
     .information {
         grid-template-columns: 1fr;
+    }
+
+    .footer-logo {
+        max-height: 36px;
     }
 }
